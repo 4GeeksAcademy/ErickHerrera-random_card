@@ -1,1 +1,72 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+}
+
+.carta {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.numero {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+}
+
+.simbolo {
+  font-size: 2rem;
+  position: absolute;
+}
+
+.simbolo-arriba {
+  top: 10px;
+  left: 10px;
+}
+
+.simbolo-abajo {
+  bottom: 10px;
+  right: 10px;
+}
+
+.rojo {
+  color: red;
+}
+
+.negro {
+  color: black;
+}
+.boton {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.boton:active {
+  transform: scale(1);
+}
